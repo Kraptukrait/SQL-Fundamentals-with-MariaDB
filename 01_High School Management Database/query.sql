@@ -24,14 +24,14 @@ SELECT DISTINCT tbl_student.fk_class FROM tbl_student;
 SELECT tbl_student.student_lastname, tbl_student.fk_class FROM tbl_student 
 WHERE tbl_student.fk_class LIKE "Math101"\G;
 
--- Select first names, last names, and gender of all students who are either female ('w') or male ('m')
--- This query will return first name, last name, and gender for all students who match either gender "w" or "m"
+-- Select first names, last names, and gender of all students who are either female ('f') or male ('m')
+-- This query will return first name, last name, and gender for all students who match either gender "f" or "m"
 SELECT tbl_student.student_firstname, tbl_student.student_lastname, tbl_student.gender FROM tbl_student
-WHERE tbl_student.gender LIKE "w" OR tbl_student.gender LIKE "m";
+WHERE tbl_student.gender LIKE "f" OR tbl_student.gender LIKE "m";
 
--- Select first names, last names, and birth dates of all female students (gender = 'w')
+-- Select first names, last names, and birth dates of all female students (gender = 'f')
 SELECT tbl_student.student_firstname, tbl_student.student_lastname, tbl_student.birth_date FROM tbl_student
-WHERE tbl_student.gender LIKE "w";
+WHERE tbl_student.gender LIKE "f";
 
 -- Select first names, last names, and birth dates of all male students (gender = 'm')
 SELECT tbl_student.student_firstname, tbl_student.student_lastname, tbl_student.birth_date FROM tbl_student
