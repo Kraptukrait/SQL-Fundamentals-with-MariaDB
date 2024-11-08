@@ -1,7 +1,3 @@
-Sure! Here's the funnier version with more emojis in English:
-
----
-
 **Project: Internship Database** 📚💻
 
 **Initial Situation**  
